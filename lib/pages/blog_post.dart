@@ -12,12 +12,12 @@ class blog_post extends StatelessWidget {
         onWillPop: () async {
           return Future.value(false);
         },
-        child: Scaffold(
+        child: const Scaffold(
           appBar: CustomAppBar(icon: Icons.rss_feed, title: "Blog Post"),
           backgroundColor: Colors.black,
-          body: const WebViewWidget(
+          body: WebViewWidget(
             url:
-                'https://future-insight.blog/post', // replace with your actual URL
+                'https://future-insight.netlify.app/post/', // replace with your actual URL
           ),
         ));
   }

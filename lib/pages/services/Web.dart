@@ -13,11 +13,11 @@ class Web_Devlopment extends StatelessWidget {
         onWillPop: () async {
           return Future.value(false);
         },
-        child: Scaffold(
+        child: const Scaffold(
           appBar: BackCustomAppBar(title: "Website Development"),
-          body: const WebViewWidget(
+          body: WebViewWidget(
             url:
-                'https://future-insight.blog/services/web-development/', // replace with your actual URL
+                'https://future-insight.netlify.app/services/web-development/', // replace with your actual URL
           ),
         ));
   }

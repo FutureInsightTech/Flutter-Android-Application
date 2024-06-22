@@ -27,7 +27,8 @@ class _ServicesState extends State<Services> {
           return Future.value(false);
         },
         child: Scaffold(
-          appBar: CustomAppBar(icon: Icons.design_services, title: "Services"),
+          appBar: const CustomAppBar(
+              icon: Icons.design_services, title: "Services"),
           backgroundColor: Colors.black,
           body: ListView(
             children: [
@@ -143,7 +144,6 @@ class _ServicesState extends State<Services> {
         ),
       );
     } catch (e) {
-      // Handle the error here, you can display an error message or take any other appropriate action.
       return Scaffold(
         backgroundColor: Colors.red,
         body: Center(

@@ -13,11 +13,11 @@ class ML_Service extends StatelessWidget {
         onWillPop: () async {
           return Future.value(false);
         },
-        child: Scaffold(
+        child: const Scaffold(
           appBar: BackCustomAppBar(title: "Machine Learning Development"),
-          body: const WebViewWidget(
+          body: WebViewWidget(
             url:
-                'https://future-insight.blog/services/machinelearning/', // replace with your actual URL
+                'https://future-insight.netlify.app/services/machinelearning/', // replace with your actual URL
           ),
         ));
   }

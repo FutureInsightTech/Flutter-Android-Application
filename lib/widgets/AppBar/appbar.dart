@@ -4,7 +4,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final IconData icon;
   final String title;
 
-  CustomAppBar({Key? key, required this.icon, required this.title})
+  const CustomAppBar({Key? key, required this.icon, required this.title})
       : super(key: key);
 
   @override

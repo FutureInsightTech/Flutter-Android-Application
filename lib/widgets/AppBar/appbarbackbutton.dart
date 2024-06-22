@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class BackCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
 
-  BackCustomAppBar({Key? key, required this.title}) : super(key: key);
+  const BackCustomAppBar({Key? key, required this.title}) : super(key: key);
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {

@@ -19,7 +19,7 @@ class _ContactUSState extends State<ContactUS> {
             return Future.value(false);
           },
           child: Scaffold(
-            appBar: CustomAppBar(icon: Icons.contact_page, title: "Contact US"),
+            appBar: const CustomAppBar(icon: Icons.contact_page, title: "Contact US"),
             backgroundColor: Colors.black,
             body: Padding(
               padding: const EdgeInsets.only(top: 60, bottom: 50.0),
@@ -36,7 +36,7 @@ class _ContactUSState extends State<ContactUS> {
                 companyFontWeight: FontWeight.bold,
                 dividerThickness: 2,
                 textFont: "14",
-                website: 'https://future-insight.blog/',
+                website: 'https://future-insight.netlify.app',
                 githubUserName: 'FutureInsightTech',
                 tagLine: 'Tech, the Future Way',
                 twitterHandle: 'future_insight9',

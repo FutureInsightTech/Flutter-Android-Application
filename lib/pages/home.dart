@@ -12,11 +12,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: CustomAppBar(icon: Icons.home, title: "Home"),
       backgroundColor: Colors.black,
-      body: const WebViewWidget(
-        url: 'https://future-insight.blog/', // replace with your actual URL
+      body: WebViewWidget(
+        url:
+            'https://future-insight.netlify.app/', // replace with your actual URL
       ),
     );
   }

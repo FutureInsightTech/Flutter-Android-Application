@@ -12,15 +12,14 @@ class author extends StatelessWidget {
         onWillPop: () async {
           return Future.value(false);
         },
-        child: Scaffold(
+        child: const Scaffold(
           appBar: CustomAppBar(
             icon: Icons.person_2,
             title: 'Author: Abdul Rafay',
           ),
           backgroundColor: Colors.black,
-          body: const WebViewWidget(
-            url:
-                'https://future-insight.blog/author', // replace with your actual URL
+          body: WebViewWidget(
+            url: 'https://future-insight.netlify.app/author/',
           ),
         ));
   }
